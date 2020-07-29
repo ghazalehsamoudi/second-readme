@@ -1,0 +1,22 @@
+@mixin second {
+    position: absolute;
+    display: none;
+    top: 67px;
+    flex-direction: column;
+    width: 107px;
+    height: 96px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+@mixin font-size {
+    color: $color-first;
+    font-size: 13px;
+}
+
+@mixin display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

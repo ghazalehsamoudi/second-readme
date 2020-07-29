@@ -1,0 +1,446 @@
+.content {
+    margin-top: 67px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .back-picture {
+        width: inherit;
+        background-color: aqua;
+        height: 419px;
+
+        img {
+            width: inherit;
+            height: inherit;
+            position: relative;
+        }
+
+        .flyes {
+            position: absolute;
+            top: 67px;
+            left: 15px;
+            width: 1319px;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+
+            .visit-top {
+                width: inherit;
+                background-color: $color-forth;
+                display: flex;
+                justify-content: center;
+
+                .visit {
+                    height: 59px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 445px;
+                    justify-content: space-evenly;
+
+                    a {
+                        height: inherit;
+                        display: flex;
+                        align-items: center;
+
+
+                        i {
+                            @include font-size;
+                            font-size: 20px;
+                        }
+                    }
+
+                    span {
+                        @include font-size;
+                    }
+
+                    button {
+                        font-size: 12px;
+                        background-color: #eac47ea8;
+                        border: 1px solid $color-first;
+                        color: $color-first;
+                        height: 28px;
+                        border-radius: 4px;
+
+                    }
+                }
+            }
+
+            .flyes-bottom {
+                height: 223px;
+                position: absolute;
+                top: 196px;
+                left: 0;
+                width: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #80808070;
+
+                .flyes-items {
+                    width: 76%;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 73px;
+
+                    a {
+                        width: 18%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        &:hover {
+                            text-decoration: none;
+
+                            i,
+                            span {
+                                color: $color-forth;
+                            }
+                        }
+
+                        i {
+                            width: 50px;
+                            height: 63px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 28px;
+                            color: white;
+                        }
+
+                        span {
+                            @include font-size;
+                            color: white;
+                        }
+                    }
+                }
+
+                .flyes-inf {
+                    height: 44px;
+                    width: 100%;
+                    padding: 0px 85px 0 78px;
+
+                    form {
+                        display: flex;
+                        flex-direction: row;
+                        height: inherit;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .flyes-inf-place {
+                            display: flex;
+                            flex-direction: row;
+                            height: inherit;
+                            width: 50%;
+
+                            .flyes-inf-place-from {
+                                position: relative;
+                                height: inherit;
+                                width: 50%;
+
+                                i {
+                                    position: absolute;
+                                    right: 9px;
+                                    bottom: 14px;
+                                }
+
+                                input {
+                                    width: 100%;
+                                    padding: 0 32px 0 0;
+                                    font-size: 13px;
+                                    height: inherit;
+                                    border-top-right-radius: 4px;
+                                    border: transparent;
+                                    border-bottom-right-radius: 4px;
+                                    border-left: 1px solid #264653;
+                                    color: $color-first;
+                                }
+                            }
+
+                            .flyes-inf-place-to {
+                                position: relative;
+                                height: inherit;
+                                width: 50%;
+
+                                i {
+                                    position: absolute;
+                                    right: 9px;
+                                    bottom: 14px;
+                                }
+
+                                input {
+                                    width: 100%;
+                                    padding: 0 32px 0 0;
+                                    font-size: 13px;
+                                    height: inherit;
+                                    border: transparent;
+                                    border-top-left-radius: 4px;
+                                    border-bottom-left-radius: 4px;
+                                    color: #264653;
+                                }
+                            }
+                        }
+
+                        .flyes-inf-items {
+                            width: 50%;
+                            height: inherit;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin-right: 12px;
+
+                            .flyes-inf-time {
+                                @include flyes-inf;
+
+                                i {
+                                    @include flyes-inf-i;
+
+                                }
+
+                                input {
+                                    @include flyes-inf-in;
+                                }
+                            }
+
+                            .flyes-inf-members {
+                                @include flyes-inf;
+
+                                i {
+                                    @include flyes-inf-i;
+                                }
+
+                                input {
+                                    @include flyes-inf-in;
+                                }
+                            }
+
+                            button {
+                                width: 32%;
+                                padding: 0;
+                                margin: 0;
+                                background-color: white;
+                                border: none;
+                                @include font-size;
+                                border-radius: 4px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .content-images {
+        height: 261px;
+        display: flex;
+        flex-direction: row;
+        width: inherit;
+        align-items: center;
+        padding: 0 140px 0 138px;
+        justify-content: space-between;
+
+        .images {
+            height: inherit;
+            width: 24%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            &:nth-child(2) {
+                width: 25%;
+            }
+
+
+            img {
+                width: 147px;
+                height: 115px;
+            }
+
+            .images-info {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                line-height: 29px;
+
+
+                strong {
+                    font-size: 14px;
+                    color: $color-first;
+                }
+
+                p {
+                    margin: 0em;
+                    font-size: 14px;
+                    color: $color-first;
+                }
+            }
+        }
+
+    }
+
+    .application {
+        background-color: #9e9e9e4f;
+        width: inherit;
+        height: 383px;
+        display: flex;
+        flex-direction: row;
+        padding: 0 211px 0 202px;
+        justify-content: space-between;
+
+        .application-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .application-info-dnl {
+                display: flex;
+                flex-direction: column;
+                height: 80%;
+                justify-content: space-evenly;
+
+                .application-info-dnl-top {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+
+                    strong {
+                        font-size: 29px;
+                        color: #264653;
+                    }
+
+                    span {
+                        font-size: 17px;
+                    }
+                }
+
+                .application-info-dnl-btn {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    height: 109px;
+                    justify-content: space-around;
+
+                    .application-info-a {
+                        display: flex;
+                        flex-direction: row;
+                        width: 205px;
+                        height: 67px;
+                        border-radius: 4px;
+                        justify-content: space-evenly;
+                        background-color: white;
+                        display: flex;
+                        flex-direction: row;
+
+                        i {
+                            font-size: 25px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .application-info-a-icon {
+                            display: flex;
+                            flex-direction: column;
+                            background-color: white;
+                            justify-content: space-evenly;
+                            align-items: baseline;
+                            margin-left: 19px;
+
+                            span {
+                                font-size: 13px;
+                            }
+
+                            img {
+                                margin: 0;
+                                height: 40px;
+                                width: 117px;
+                            }
+                        }
+                    }
+
+                    span {
+                        font-size: 11px;
+                        color: #264653b8;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+        img {
+            border-top-right-radius: 36px;
+            border-top-left-radius: 36px;
+            display: flex;
+            margin-top: 28px;
+        }
+    }
+
+    .content-btn {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+
+        .content-items {
+            height: 100px;
+            @include content-items;
+
+            a {
+                height: 100%;
+                width: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                span {
+                    margin-left: 7px;
+                    @include font-size;
+                }
+
+                i {
+                    @include font-size;
+                }
+            }
+        }
+
+        .content-list {
+            padding: 0 97px 0 80px;
+            height: 118px;
+            @include content-items;
+
+            .content-list-items {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 24%;
+                align-items: baseline;
+
+                a {
+
+                    li {
+                        @include font-size;
+
+                        &:hover {
+                            color: $color-second;
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}

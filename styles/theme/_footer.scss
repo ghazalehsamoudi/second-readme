@@ -1,0 +1,154 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 653px;
+    padding: 0 105px 0 157px;
+    justify-content: space-between;
+    border-top: 1px solid $color-first;
+    margin-bottom: 86px;
+
+    .alibaba {
+        @include footer-div;
+
+        strong {
+            @include font-size-fo;
+            @include footer-div-strong;
+        }
+
+        ul {
+            @include footer-ul;
+
+            a {
+
+
+                li {
+                    @include font-size;
+
+                    &:hover {
+                        color: $color-second;
+                    }
+                }
+            }
+        }
+    }
+
+    .complete-information {
+        @include footer-div;
+        width: 24%;
+
+        strong {
+            @include font-size-fo;
+            @include footer-div-strong;
+        }
+
+        ul {
+            @include footer-ul;
+
+            a {
+                li {
+                    @include font-size;
+
+                    &:hover {
+                        color: $color-second;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .application-alibaba {
+        @include footer-div;
+        width: 25%;
+
+        strong {
+            @include font-size-fo;
+            @include footer-div-strong;
+        }
+
+        p {
+            @include font-size;
+            margin-bottom: 20px;
+            display: flex;
+            width: 246px;
+            line-height: 24px;
+        }
+
+        .logos-image {
+            display: flex;
+            flex-flow: row wrap;
+            height: 88px;
+            justify-content: space-evenly;
+
+            a {
+                img {
+                    width: 124px;
+                    height: 39px;
+                    border-radius: 4px;
+                }
+            }
+
+        }
+
+    }
+
+    .alibaba-ir {
+        @include footer-div;
+        width: 25%;
+
+        .alibaba-ir-img {
+            @include footer-div-strong;
+            justify-content: center;
+
+            img {
+                width: 205px;
+                height: 38px;
+            }
+        }
+
+        .phones {
+            height: 36px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            span {
+                @include font-size;
+                width: 33%;
+                display: flex;
+                justify-content: center;
+
+                &:nth-child(2) {
+                    border-left: 1px solid $color-first;
+                }
+            }
+        }
+
+        .symbols-items {
+            display: flex;
+            flex-flow: row wrap;
+            height: 181px;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                img {
+                    width: 84px;
+                    height: 84px;
+                    border-radius: 7px;
+                    border: 1px solid #00000026;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+}

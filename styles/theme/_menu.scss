@@ -1,0 +1,26 @@
+header {
+    .info {
+        background-color: $color-fifth;
+
+        .mail {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            span {
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            a {}
+        }
+
+        .phone {
+            span {}
+        }
+
+        .btn {
+            button {}
+        }
+    }
+}
